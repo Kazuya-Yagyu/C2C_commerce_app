@@ -12,7 +12,7 @@ import Spinner from 'components/atoms/spinner'
 import Text from 'components/atoms/text'
 import Box from 'components/layout/Box'
 import Flex from 'components/layout/Flex'
-import BadgeIconButton from 'components/molecules/BadgeIconButton'
+import BadgeIconButton from 'components/molecules/badgeIconButton'
 import { useAuthContext } from 'contexts/AuthContext'
 import { useShoppingCartContext } from 'contexts/ShoppingCartContext'
 
