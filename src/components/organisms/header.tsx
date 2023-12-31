@@ -13,8 +13,8 @@ import Text from 'components/atoms/text'
 import Box from 'components/layout/Box'
 import Flex from 'components/layout/Flex'
 import BadgeIconButton from 'components/molecules/badgeIconButton'
-import { useAuthContext } from 'contexts/AuthContext'
-import { useShoppingCartContext } from 'contexts/ShoppingCartContext'
+import { useAuthContext } from 'contexts/authContext'
+import { useShoppingCartContext } from 'contexts/shoppingCartContext'
 
 // ヘッダーのルート
 const HeaderRoot = styled.header`
