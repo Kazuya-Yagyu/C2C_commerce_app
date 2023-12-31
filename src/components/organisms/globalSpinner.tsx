@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Spinner from 'components/atoms/spinner'
-import { useGlobalSpinnerContext } from 'contexts/GlobalSpinnerContext'
+import { useGlobalSpinnerContext } from 'contexts/globalSpinnerContext'
 
 const GlobalSpinnerWrapper = styled.div`
   position: fixed;
