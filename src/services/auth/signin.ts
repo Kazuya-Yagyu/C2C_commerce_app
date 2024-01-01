@@ -34,7 +34,7 @@ const signin = async (
       },
       body: JSON.stringify(params),
     },
-  )
+  );
 }
 
 export default signin

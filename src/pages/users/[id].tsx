@@ -46,7 +46,7 @@ import type {
               <Breadcrumb>
                 <BreadcrumbItem>
                   <Link href="/">
-                    <a>トップ</a>
+                    トップ
                   </Link>
                 </BreadcrumbItem>
                 {user && <BreadcrumbItem>{user.username}</BreadcrumbItem>}
@@ -72,7 +72,7 @@ import type {
           </Box>
         </Flex>
       </Layout>
-    )
+    );
   }
   
   export const getStaticPaths: GetStaticPaths = async () => {

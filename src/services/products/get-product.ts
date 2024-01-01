@@ -26,7 +26,7 @@ const getProduct = async (
         'Content-Type': 'application/json',
       },
     },
-  )
+  );
 }
 
 export default getProduct

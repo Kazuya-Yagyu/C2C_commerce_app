@@ -25,17 +25,17 @@ const Footer = () => {
         >
           <nav>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">トップ</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">採用</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">お知らせ</Anchor>
               </Link>
             </Box>
@@ -47,17 +47,17 @@ const Footer = () => {
         >
           <nav>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">利用規約</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">プライバシーポリシー</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">配送と返品</Anchor>
               </Link>
             </Box>
@@ -79,7 +79,7 @@ const Footer = () => {
         <Text>© 2021 Gijutsuhyoronsha Co., Ltd.. All rights reserved.</Text>
       </Box>
     </footer>
-  )
+  );
 }
 
 export default Footer

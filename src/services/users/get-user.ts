@@ -23,7 +23,7 @@ const getUser = async (
         'Content-Type': 'application/json',
       },
     },
-  )
+  );
 }
 
 export default getUser
