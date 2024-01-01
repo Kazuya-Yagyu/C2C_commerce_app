@@ -25,17 +25,17 @@ const Footer = () => {
         >
           <nav>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">トップ</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">採用</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">お知らせ</Anchor>
               </Link>
             </Box>
@@ -47,39 +47,25 @@ const Footer = () => {
         >
           <nav>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">利用規約</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">プライバシーポリシー</Anchor>
               </Link>
             </Box>
             <Box marginBottom={2}>
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <Anchor as="a">配送と返品</Anchor>
               </Link>
             </Box>
           </nav>
         </Box>
-        <Box minWidth={{ base: '100%', md: '120px' }}>
-          <nav>
-            <Anchor
-              as="a"
-              href="https://github.com/gihyo-book/ts-nextbook-app"
-              target="_blank"
-            >
-              <GitHubIcon size={22} />
-            </Anchor>
-          </nav>
-        </Box>
       </Flex>
-      <Box paddingTop={3} paddingBottom={2}>
-        <Text>© 2021 Gijutsuhyoronsha Co., Ltd.. All rights reserved.</Text>
-      </Box>
     </footer>
-  )
+  );
 }
 
 export default Footer

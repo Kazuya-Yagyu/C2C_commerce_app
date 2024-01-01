@@ -25,7 +25,7 @@ const purchase = async (
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(params),
-  })
+  });
 }
 
 export default purchase

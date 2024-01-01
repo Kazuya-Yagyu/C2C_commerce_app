@@ -25,7 +25,7 @@ const addProduct = async (
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(product),
-  })
+  });
 }
 
 export default addProduct
