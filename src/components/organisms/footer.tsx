@@ -63,21 +63,7 @@ const Footer = () => {
             </Box>
           </nav>
         </Box>
-        <Box minWidth={{ base: '100%', md: '120px' }}>
-          <nav>
-            <Anchor
-              as="a"
-              href="https://github.com/gihyo-book/ts-nextbook-app"
-              target="_blank"
-            >
-              <GitHubIcon size={22} />
-            </Anchor>
-          </nav>
-        </Box>
       </Flex>
-      <Box paddingTop={3} paddingBottom={2}>
-        <Text>© 2021 Gijutsuhyoronsha Co., Ltd.. All rights reserved.</Text>
-      </Box>
     </footer>
   );
 }
