@@ -131,7 +131,7 @@ const ProductForm = ({ onProductSave }: ProductFormProps) => {
               <Dropdown
                 options={[
                   { value: 'shoes', label: 'シューズ' },
-                  { value: 'clothes', label: 'トップス' },
+                  { value: 'clothes', label: '’武器' },
                   { value: 'book', label: '本' },
                 ]}
                 hasError={!!error}

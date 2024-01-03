@@ -22,7 +22,7 @@ const Anchor = styled(Text)`
 const categoryNameDict: Record<Category, string> = {
   book: '本',
   shoes: 'シューズ',
-  clothes: 'トップス',
+  clothes: '武器',
 }
 
 const SearchPage: NextPage = () => {

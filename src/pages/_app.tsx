@@ -13,7 +13,9 @@ import { fetcher } from 'utils'
 // グローバルのスタイル
 const GlobalStyle = createGlobalStyle`
 html,
-body,
+body {
+  background-color: rgba(0, 0, 128, 0.1);
+},
 textarea {
   padding: 0;
   margin: 0;

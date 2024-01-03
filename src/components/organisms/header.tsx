@@ -71,7 +71,7 @@ const Header = () => {
           <NavLink>
             <Box display={{ base: 'none', md: 'block' }}>
               <Link href="/search/clothes" passHref legacyBehavior>
-                <Anchor as="a">トップス</Anchor>
+                <Anchor as="a">武器</Anchor>
               </Link>
             </Box>
           </NavLink>

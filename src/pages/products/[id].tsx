@@ -25,7 +25,7 @@ import type {
   const categoryNameDict: Record<Category, string> = {
     book: '本',
     shoes: 'シューズ',
-    clothes: 'トップス',
+    clothes: '武器',
   }
   
   const context: ApiContext = {

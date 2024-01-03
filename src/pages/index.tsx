@@ -50,7 +50,7 @@ const HomePage: NextPage<HomePageProps> = ({
         >
           <Box width="100%">
             <Text as="h1" marginTop={2} color="white" variant="extraLarge">
-              お気に入りのアイテムを見つけよう
+              汝の好まむる品を求むべし
             </Text>
           </Box>
         </Flex>
@@ -63,7 +63,7 @@ const HomePage: NextPage<HomePageProps> = ({
         >
           <Box marginBottom={3}>
             <Text as="h2" variant="large">
-              トップス
+              武器
             </Text>
             {renderProductCardCarousel(clothesProducts)}
           </Box>
