@@ -72,10 +72,11 @@ const ProductCard = ({
           <Box>
             <Text
               as="h2"
-              fontSize={{ base: 'small', md: 'mediumLarge' }}
+              fontSize={{ base: 'small', md: 'small' }}
+              color="white"
               letterSpacing={{ base: 2, md: 3 }}
-              lineHeight={{ base: '32px', md: '48px' }}
-              backgroundColor="white"
+              lineHeight={{ base: '32px', md: '40px' }}
+              backgroundColor="rgba(0, 0, 128, 0.9)"
               margin={0}
               paddingRight={2}
               paddingLeft={2}
@@ -87,8 +88,9 @@ const ProductCard = ({
             <Text
               as="span"
               fontWeight="bold"
+              color="white"
               display="inline-block"
-              backgroundColor="white"
+              backgroundColor="rgba(0, 0, 128, 0.9)"
               fontSize={{ base: 'extraSmall', md: 'medium' }}
               lineHeight={{ base: '8px', md: '12px' }}
               letterSpacing={{ base: 2, md: 4 }}
