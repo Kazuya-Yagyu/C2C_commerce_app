@@ -8,6 +8,7 @@ import ProductCardCarousel from 'components/organisms/productCardCarousel'
 import Layout from 'components/templates'
 import getAllProducts from 'services/products/get-all-products'
 import { ApiContext, Product } from 'types'
+import { Anchor } from '@mui/icons-material'
 
 type HomePageProps = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -23,15 +24,15 @@ const HomePage: NextPage<HomePageProps> = ({
         {products.map((p: Product, i: number) => (
           <Box paddingLeft={i === 0 ? 0 : 2} key={p.id}>
             <Link href={`/products/${p.id}`} passHref legacyBehavior>
-
-              <ProductCard
-                variant="small"
-                title={p.title}
-                price={p.price}
-                imageUrl={p.imageUrl}
-                blurDataUrl={p.blurDataUrl}
-              />
-
+              <a>
+                <ProductCard
+                  variant="small"
+                  title={p.title}
+                  price={p.price}
+                  imageUrl={p.imageUrl}
+                  blurDataUrl={p.blurDataUrl}
+                />
+              </a>
             </Link>
           </Box>
         ))}
