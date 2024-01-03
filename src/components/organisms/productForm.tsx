@@ -130,7 +130,7 @@ const ProductForm = ({ onProductSave }: ProductFormProps) => {
             render={({ field: { onChange, value }, fieldState: { error } }) => (
               <Dropdown
                 options={[
-                  { value: 'shoes', label: 'シューズ' },
+                  { value: 'shoes', label: '靴' },
                   { value: 'clothes', label: '’武器' },
                   { value: 'book', label: '本' },
                 ]}

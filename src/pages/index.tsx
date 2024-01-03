@@ -75,7 +75,7 @@ const HomePage: NextPage<HomePageProps> = ({
           </Box>
           <Box>
             <Text as="h2" variant="large">
-              シューズ
+              靴
             </Text>
             {renderProductCardCarousel(shoesProducts)}
           </Box>
