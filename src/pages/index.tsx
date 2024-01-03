@@ -8,6 +8,7 @@ import ProductCardCarousel from 'components/organisms/productCardCarousel'
 import Layout from 'components/templates'
 import getAllProducts from 'services/products/get-all-products'
 import { ApiContext, Product } from 'types'
+import { Anchor } from '@mui/icons-material'
 
 type HomePageProps = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -22,16 +23,16 @@ const HomePage: NextPage<HomePageProps> = ({
       <ProductCardCarousel>
         {products.map((p: Product, i: number) => (
           <Box paddingLeft={i === 0 ? 0 : 2} key={p.id}>
-            <Link href={`/products/${p.id}`} passHref>
-
-              <ProductCard
-                variant="small"
-                title={p.title}
-                price={p.price}
-                imageUrl={p.imageUrl}
-                blurDataUrl={p.blurDataUrl}
-              />
-
+            <Link href={`/products/${p.id}`} passHref legacyBehavior>
+              <a>
+                <ProductCard
+                  variant="small"
+                  title={p.title}
+                  price={p.price}
+                  imageUrl={p.imageUrl}
+                  blurDataUrl={p.blurDataUrl}
+                />
+              </a>
             </Link>
           </Box>
         ))}
@@ -50,7 +51,12 @@ const HomePage: NextPage<HomePageProps> = ({
         >
           <Box width="100%">
             <Text as="h1" marginTop={2} color="white" variant="extraLarge">
-              お気に入りのアイテムを見つけよう
+              汝の好まむる品を求むべし
+            </Text>
+          </Box>
+          <Box width="100%">
+            <Text as="p" color="white" variant="mediumLarge">
+            歓迎せん、我がEC市場へ。我がウェブの市街は、遠方の商人より高貴な品々を運び、庶民に贅沢な買い物の機会をもたらん。魅惑の品々が、君を待つ。絹の羅を纏った美の衣、銅の器に注がれた甘美な蜜酒、遠くの地より届く美しい工芸品。我が市場に参り、古き良き時代の趣と新しい暮らしの魅力を感じよ。君の手で、これらの至宝を手に入れん。驚異の物々交換が、君の暮らしに夢と繁栄をもたらさん。
             </Text>
           </Box>
         </Flex>
@@ -63,7 +69,7 @@ const HomePage: NextPage<HomePageProps> = ({
         >
           <Box marginBottom={3}>
             <Text as="h2" variant="large">
-              トップス
+              武器
             </Text>
             {renderProductCardCarousel(clothesProducts)}
           </Box>
@@ -75,7 +81,7 @@ const HomePage: NextPage<HomePageProps> = ({
           </Box>
           <Box>
             <Text as="h2" variant="large">
-              シューズ
+              靴
             </Text>
             {renderProductCardCarousel(shoesProducts)}
           </Box>

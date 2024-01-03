@@ -24,8 +24,8 @@ import type {
   
   const categoryNameDict: Record<Category, string> = {
     book: '本',
-    shoes: 'シューズ',
-    clothes: 'トップス',
+    shoes: '靴',
+    clothes: '武器',
   }
   
   const context: ApiContext = {
@@ -67,17 +67,17 @@ import type {
             <Breadcrumb>
               <BreadcrumbItem>
                 <Link href="/">
-                  <a>トップ</a>
+                  トップ
                 </Link>
               </BreadcrumbItem>
               <BreadcrumbItem>
                 <Link href="/search">
-                  <a>検索</a>
+                  検索
                 </Link>
               </BreadcrumbItem>
               <BreadcrumbItem>
                 <Link href={`/search/${product.category}`}>
-                  <a>{categoryNameDict[product.category as Category]}</a>
+                  {categoryNameDict[product.category as Category]}
                 </Link>
               </BreadcrumbItem>
               <BreadcrumbItem>{product.title}</BreadcrumbItem>
@@ -96,15 +96,15 @@ import type {
                 出品者
               </Text>
               <Link href={`/users/${product.owner.id}`}>
-                <a>
-                  {/* ユーザープロファイル */}
-                  <UserProfile
-                    variant="small"
-                    username={product.owner.username}
-                    profileImageUrl={product.owner.profileImageUrl}
-                    numberOfProducts={100}
-                  />
-                </a>
+
+                {/* ユーザープロファイル */}
+                <UserProfile
+                  variant="small"
+                  username={product.owner.username}
+                  profileImageUrl={product.owner.profileImageUrl}
+                  numberOfProducts={100}
+                />
+
               </Link>
             </Box>
           </Box>
@@ -136,7 +136,7 @@ import type {
           </Box>
         </Flex>
       </Layout>
-    )
+    );
   }
   
   export const getStaticPaths: GetStaticPaths = async () => {

@@ -50,17 +50,17 @@ const ProductCardListContainer = ({
       {!isLoading &&
         products.map((p) => (
           <Box key={p.id}>
-            <Link href={`/products/${p.id}`} passHref>
-
-              {/* 商品カード */}
-              <ProductCard
-                variant="listing"
-                title={p.title}
-                price={p.price}
-                imageUrl={p.imageUrl}
-                blurDataUrl={p.blurDataUrl}
-              />
-
+            <Link href={`/products/${p.id}`} passHref legacyBehavior>
+              <a>
+                {/* 商品カード */}
+                <ProductCard
+                  variant="listing"
+                  title={p.title}
+                  price={p.price}
+                  imageUrl={p.imageUrl}
+                  blurDataUrl={p.blurDataUrl}
+                />
+              </a>
             </Link>
           </Box>
         ))}

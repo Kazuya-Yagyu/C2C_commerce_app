@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import styled from 'styled-components'
 import Button from 'components/atoms/button'
@@ -56,17 +56,17 @@ const CartProduct = ({
     <Flex justifyContent="space-between">
       <Flex>
         <Box width="120px" height="120px">
-          <Link href={`/products/${id}`} passHref>
-
-            <Image
-              quality="85"
-              src={imageUrl}
-              alt={title}
-              height={120}
-              width={120}
-              objectFit="cover"
-            />
-
+          <Link href={`/products/${id}`} passHref legacyBehavior>
+            <a>
+              <Image
+                quality="85"
+                src={imageUrl}
+                alt={title}
+                height={120}
+                width={120}
+                objectFit="cover"
+              />
+            </a>
           </Link>
         </Box>
         <Box padding={1}>

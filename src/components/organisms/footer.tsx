@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import styled from 'styled-components'
-import { GitHubIcon } from 'components/atoms/iconButton'
 import Text from 'components/atoms/text'
 import Box from 'components/layout/Box'
 import Flex from 'components/layout/Flex'
