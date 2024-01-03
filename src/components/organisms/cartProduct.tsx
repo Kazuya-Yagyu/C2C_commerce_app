@@ -56,7 +56,7 @@ const CartProduct = ({
     <Flex justifyContent="space-between">
       <Flex>
         <Box width="120px" height="120px">
-          <Link href={`/products/${id}`} passHref>
+          <Link href={`/products/${id}`} passHref legacyBehavior>
 
             <Image
               quality="85"
