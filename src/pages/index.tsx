@@ -54,6 +54,11 @@ const HomePage: NextPage<HomePageProps> = ({
               汝の好まむる品を求むべし
             </Text>
           </Box>
+          <Box width="100%">
+            <Text as="p" color="white" variant="mediumLarge">
+            歓迎せん、我がEC市場へ。我がウェブの市街は、遠方の商人より高貴な品々を運び、庶民に贅沢な買い物の機会をもたらん。魅惑の品々が、君を待つ。絹の羅を纏った美の衣、銅の器に注がれた甘美な蜜酒、遠くの地より届く美しい工芸品。我が市場に参り、古き良き時代の趣と新しい暮らしの魅力を感じよ。君の手で、これらの至宝を手に入れん。驚異の物々交換が、君の暮らしに夢と繁栄をもたらさん。
+            </Text>
+          </Box>
         </Flex>
       </Flex>
       <Flex paddingBottom={2} justifyContent="center">
